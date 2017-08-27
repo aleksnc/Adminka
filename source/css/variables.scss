@@ -1,0 +1,60 @@
+@font-face{
+  font-family: 'Poppins';
+
+  src: url('../fonts/Poppins-Light.ttf');
+
+  font-weight: 100;
+
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Poppins';
+
+  src: url('../fonts/Poppins-Medium.ttf');
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Poppins';
+
+  src: url('../fonts/Poppins-Regular.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Poppins';
+
+  src: url('../fonts/Poppins-SemiBold.ttf');
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Poppins';
+
+  src: url('../fonts/Poppins-Bold.ttf');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+
+$mainFont: 'Poppins';
+
+$oneColor: #3bd9a3;
+$twoColor: #2c7c63;
+$threeColor: #144937;
+$fourColor: #141416;
+
+$primaryColor: $oneColor;
+$secondColor: $twoColor;

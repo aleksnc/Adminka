@@ -1,0 +1,39 @@
+.events__wrapper
+    .events__addW
+        .events__add
+            .events__img
+            .events
+                input.events__title(type="text" placeholder="Название события")
+                textarea.events__description(type="text" placeholder="Описание события")
+                .events__block
+                    input.events__data.start(type="text" placeholder="дата начала")
+                    input.events__data.end(type="text" placeholder="дата окончания")
+                    input.events__price(type="text" placeholder="цена")
+                .events__block
+                    select.events__adress(multiple data-id="0")
+                        option(val="0") Марата 8
+                        option(val="0") Кандрата 3
+                        option(val="0") Василия 17
+                        option(val="0") Кукарача 18
+                    input.events__btn.fastAdd(type="button" value="Добавить адрес" )
+                    .addAdress__wrapper
+                        .addAdress.popup
+                            .adress__add(style="width: 100%; max-width:100%")
+                                input.adress(type="text" placeholder="Адрес Компании")
+                                .adress__coordBlock
+                                    input.adress__coord(type="text" placeholder="lat")
+                                    input.adress__coord(type="text" placeholder="lon")
+                            input.adress__btn.save(type="button" value="Сохранить")
+                            input.adress__btn.closePopup(type="button" value="Отмена" style="margin-left: 5px")
+
+        input.events__btn.save(type="button" value="Сохранить"  )
+        input.events__btn.update(type="button" data-id="0" value="Обновить"  )
+
+    .events__list
+        ul.events__listBlock
+            li.events__listLink.parent
+                .events__listContent
+                    | Чашечка кофе в подарок к ватрушке
+                .events__public
+                    input(type="checkbox" id="check")
+                    label(for="check") Публиковать

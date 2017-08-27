@@ -1,0 +1,111 @@
+<!DOCTYPE !>
+<html lang="ru">
+  <head>
+    <title>Страница Компании</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/MainCss.css"/>
+  </head>
+  <body>
+    <div class="allContent__wrapper">
+      <div class="allContent">
+        <div class="sidebar__wrapper">
+          <div class="sidebar">
+            <div class="sidebar__block">
+              <input class="sidebar__Menu" type="button" value="События"/>
+              <input class="sidebar__Menu sidebar__Menu--subMenu" type="button" onclick="show('addEvent')" value="Создать событие"/>
+              <input class="sidebar__Menu sidebar__Menu--subMenu" type="button" onclick="show('event')" value="Список событий"/>
+            </div>
+            <div class="sidebar__block">
+              <input class="sidebar__Menu" type="button" value="Адреса"/>
+              <input class="sidebar__Menu sidebar__Menu--subMenu" type="button" onclick="show('addAdress')" value="Создать адрес"/>
+              <input class="sidebar__Menu sidebar__Menu--subMenu" type="button" onclick="show('adress')" value="Список адресов"/>
+            </div>
+          </div>
+        </div>
+        <div class="allContent__content">
+          <div class="events__wrapper">
+            <div class="events__addW">
+              <div class="events__add">
+                <div class="events__img"></div>
+                <div class="events">
+                  <input class="events__title" type="text" placeholder="Название события"/>
+                  <textarea class="events__description" type="text" placeholder="Описание события"></textarea>
+                  <div class="events__block">
+                    <input class="events__data start" type="text" placeholder="дата начала"/>
+                    <input class="events__data end" type="text" placeholder="дата окончания"/>
+                    <input class="events__price" type="text" placeholder="цена"/>
+                  </div>
+                  <div class="events__block">
+                    <select class="events__adress" multiple="multiple" data-id="0">
+                      <option val="0">Марата 8</option>
+                      <option val="0">Кандрата 3</option>
+                      <option val="0">Василия 17</option>
+                      <option val="0">Кукарача 18</option>
+                    </select>
+                    <input class="events__btn fastAdd" type="button" value="Добавить адрес"/>
+                    <div class="addAdress__wrapper">
+                      <div class="addAdress popup">
+                        <div class="adress__add" style="width: 100%; max-width:100%;">
+                          <input class="adress" type="text" placeholder="Адрес Компании"/>
+                          <div class="adress__coordBlock">
+                            <input class="adress__coord" type="text" placeholder="lat"/>
+                            <input class="adress__coord" type="text" placeholder="lon"/>
+                          </div>
+                        </div>
+                        <input class="adress__btn save" type="button" value="Сохранить"/>
+                        <input class="adress__btn closePopup" type="button" value="Отмена" style="margin-left: 5px;"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input class="events__btn save" type="button" value="Сохранить"/>
+              <input class="events__btn update" type="button" data-id="0" value="Обновить"/>
+            </div>
+            <div class="events__list">
+              <ul class="events__listBlock">
+                <li class="events__listLink parent">
+                  <div class="events__listContent">Чашечка кофе в подарок к ватрушке</div>
+                  <div class="events__public">
+                    <input type="checkbox" id="check"/>
+                    <label for="check">Публиковать</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="adress__wrapper">
+            <div class="adress__addW">
+              <div class="adress__add" data-id="0">
+                <input class="adress name" type="text" placeholder="Название Компании"/>
+                <input class="adress" type="text" placeholder="Адрес Компании"/>
+                <textarea class="adress description" type="text" placeholder="Описание компании"></textarea>
+                <div class="adress__coordBlock">
+                  <input class="adress__coord la" type="text" placeholder="lat"/>
+                  <input class="adress__coord lo" type="text" placeholder="lon"/>
+                </div>
+              </div>
+              <input class="adress__btn save" type="button" value="Сохранить"/>
+              <input class="adress__btn update" type="button" data-id="0" value="Обновить"/>
+            </div>
+            <div class="adress__list">
+              <ul class="adress__listBlock">
+                <li class="adress__listLink parent">
+                  <div class="adress__listContent">Марата 8</div>
+                  <div class="adress__public">
+                    <input type="checkbox" id="check"/>
+                    <label for="check">Публиковать</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+  <script rel="script" src="script/jquery-2.2.3.min.js"></script>
+  <script rel="script" src="script/mainJS.js"></script>
+</html>

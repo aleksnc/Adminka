@@ -1,0 +1,286 @@
+@import "../blocks/mixin.scss";
+@import "variables";
+@import "global";
+
+.btn {
+  background: transparent;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: none;
+
+  &__wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.allContent {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__wrapper {
+    min-height: 100%;
+    padding-bottom: 280px;
+    font-size: 0;
+  }
+
+  &__content {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    border: 1px solid;
+    border-left-width: 0;
+
+  }
+}
+
+.sidebar {
+  padding: 10px;
+
+  &__wrapper {
+    border: 1px solid;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+    display: inline-block;
+  }
+
+  &__block {
+    display: block;
+  }
+
+  &__Menu {
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    background-color: lightblue;
+    border: 1px solid cadetblue;
+
+    &--subMenu {
+      display: none;
+      width: 90%;
+      margin-left: 10%;
+      background-color: #205aa0;
+      border: 1px solid cadetblue;
+      color: #fff;
+    }
+  }
+}
+
+.adress {
+  width: 100%;
+  border: 1px solid cadetblue;
+  padding: 5px;
+  margin: 0 0 15px;
+
+  &__wrapper {
+    padding: 15px;
+  }
+  &__addW {
+    padding: 10px;
+    margin-bottom: 15px;
+    display: none;
+  }
+  &__add {
+    border: 1px solid cadetblue;
+    max-width: 50%;
+    padding: 10px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0;
+    text-align: left;
+    padding: 5px;
+    background-color: lightblue;
+    border: 1px solid cadetblue;
+  }
+  &__coordBlock {
+    font-size: 0;
+  }
+
+  &__coord {
+    font-size: 16px;
+    display: inline-block;
+    width: 49%;
+    border: 1px solid cadetblue;
+    margin-right: 2%;
+    padding: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__list {
+    padding: 10px;
+    margin-bottom: 15px;
+    display: none;
+  }
+
+  &__listContent {
+    font-size: 16px;
+    cursor: pointer;
+    width: 70%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid cadetblue;
+
+  }
+
+  &__public {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+    vertical-align: middle;
+    display: inline-block;
+
+    input {
+      display: inline-block;
+    }
+  }
+}
+
+.events {
+  width: 78%;
+  border: 1px solid cadetblue;
+  padding: 5px;
+  margin: 0 0 15px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
+
+  &__wrapper {
+    padding: 15px;
+  }
+
+  &__addW {
+    padding: 10px;
+    margin-bottom: 15px;
+    display: none;
+  }
+
+  &__add {
+    width: 100%;
+  }
+
+  &__img {
+    border: 1px solid cadetblue;
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0;
+    text-align: left;
+    padding: 5px;
+    background-color: lightblue;
+    border: 1px solid cadetblue;
+  }
+
+  &__list {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__listContent {
+    font-size: 16px;
+    cursor: pointer;
+    width: 70%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid cadetblue;
+
+  }
+
+  &__public {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+    vertical-align: middle;
+    display: inline-block;
+
+    input {
+      display: inline-block;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    border: 1px solid cadetblue;
+    padding: 5px;
+    margin: 0 0 15px;
+  }
+
+  &__description {
+    width: 100%;
+    border: 1px solid cadetblue;
+    padding: 5px;
+    margin: 0 0 15px;
+  }
+
+  &__data {
+    width: 30%;
+       border: 1px solid cadetblue;
+       padding: 5px;
+       margin: 0 0 15px;
+     }
+
+  &__price {
+    width: 30%;
+    border: 1px solid cadetblue;
+    padding: 5px;
+    margin: 0 0 15px;
+  }
+
+  &__block{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.addAdress{
+  display: inline-block;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 15px;
+  vertical-align: middle;
+
+  &__wrapper{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.46);
+
+    &:before{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+.update{
+  display: none;
+}

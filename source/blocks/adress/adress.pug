@@ -1,0 +1,21 @@
+.adress__wrapper
+    .adress__addW
+        .adress__add(data-id="0")
+            input.adress.name(type="text" placeholder="Название Компании")
+            input.adress(type="text" placeholder="Адрес Компании")
+            textarea.adress.description(type="text" placeholder="Описание компании")
+            .adress__coordBlock
+                input.adress__coord.la(type="text" placeholder="lat")
+                input.adress__coord.lo(type="text" placeholder="lon")
+        input.adress__btn.save(type="button" value="Сохранить" )
+        input.adress__btn.update(type="button" data-id="0" value="Обновить" )
+
+    .adress__list
+
+        ul.adress__listBlock
+            li.adress__listLink.parent
+                .adress__listContent
+                    |Марата 8
+                .adress__public
+                    input(type="checkbox" id="check")
+                    label(for="check") Публиковать
